@@ -1,3 +1,4 @@
+// Harlem Shaker Embedded Konami Code (https://github.com/AppliedEllipsis/harlem_shaker/)
 function loadjscssfile(filename, filetype){
   var fileref;
   if (filetype=="js"){

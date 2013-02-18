@@ -1,3 +1,4 @@
+// Harlem Shaker (https://github.com/AppliedEllipsis/harlem_shaker/)
 (function() {
 /*
   var MIN_HEIGHT = 30;

@@ -11,7 +11,7 @@ Drag and drop the link found at [Include.RD.To](http://include.rd.to/harlem_shak
 
 Site Including
 -------------
-    // Harlem Shake Embedded Konami Code (https://github.com/AppliedEllipsis/harlem_shaker/)
+    // Harlem Shaker Embedded Konami Code (https://github.com/AppliedEllipsis/harlem_shaker/)
     <script>
     var fileref=document.createElement('script');
     fileref.setAttribute('type','text/javascript');
