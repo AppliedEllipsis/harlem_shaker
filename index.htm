@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Harlem Shaker</title>
+<meta charset="UTF-8" />
+<script>
+    var fileref=document.createElement('script');
+    fileref.setAttribute("type","text/javascript");
+    fileref.setAttribute("src", 
+        document.location.protocol.replace(/file|chrome|about|config/,'http') + 
+        '//include.rd.to/harlem_shaker/embed.js');
+    document.getElementsByTagName("head")[0].appendChild(fileref);
+</script>
+<style type="text/css">
+  .keyb {
+    border: 1px solid #aaa;
+	 -moz-border-radius: 2px;
+	 -webkit-border-radius: 2px;
+	 border-radius: 2px;
+	 -moz-box-shadow: 1px 2px 2px #ddd;
+	 -webkit-box-shadow: 1px 2px 2px #ddd;
+	 box-shadow: 1px 2px 2px #ddd;
+	 background-color: #f9f9f9;
+	 background-image: -moz-linear-gradient(top, #eee, #f9f9f9, #eee);
+	 background-image: -ms-linear-gradient(top, #eee, #f9f9f9, #eee);
+	 background-image: -o-linear-gradient(top, #eee, #f9f9f9, #eee);
+	 background-image: -webkit-linear-gradient(top, #eee, #f9f9f9, #eee);
+	 background-image: linear-gradient(top, #eee, #f9f9f9, #eee);
+	 padding: 1px 3px;
+     margin: 2px;
+	 font-family: inherit;
+	 font-size: 0.85em;
+  }
+    .bookmarklet {
+      width: 400px;
+      display: block;
+      font-weight: bold;
+      text-tranform: uppercase;
+      color: white;
+      background: #f36721;
+      text-align: left;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      border-bottom: 2px solid #a53d09;
+      text-shadow: 0 1px 1px #752b06;
+      font-size: 16px;
+      overflow: hidden;
+      cursor: move;
+      padding: 10px;
+      -webkit-user-select: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .bookmarklet:hover {
+      border-bottom: 2px solid #cc4b0b;
+      text-shadow: 0 1px 1px #a53d09;
+    }
+    .bookmarklet:active {
+      border-bottom: none;
+      border-top: 2px solid #bd460a;
+      text-shadow: 0 1px 1px #a53d09;
+    }  
+</style>
+</head>
+<body>
+<div><h1>Harlem Shaker</h1></div>
+<hr/>
+<p>
+<strong>Below is the bookmarklets.</strong><br/>
+Drag and drop the "Harlem Shaker" link box to your bookmarks or bookmark toolbars.<br/>
+These should work in all FireFox, Chrome, and Safari.<br/>
+The script does not run automatically. When you visit a page, click the bookmark to enable it.</br>
+
+<a class="bookmarklet" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src=document.location.protocol.replace(/file|chrome|about|config/,'http') + '//include.rd.to/harlem_shaker/harlem-shake-script.js?rnd='+Math.random().toString();})();">Harlem Shaker</a>
+</p>
+<hr/>
+<p>
+<strong>Below is the site include.</strong><br/>
+Include this in your site's head section of the source code.<br/>
+These should work in all FireFox, Chrome, and Safari.<br/>
+The script does not run automatically. When you visit a page it is integrated on, type the "Konami Code" (<span class="keyb">&uarr;</span><span class="keyb">&uarr;</span><span class="keyb">&darr;</span><span class="keyb">&darr;</span><span class="keyb">&larr;</span><span class="keyb">&rarr;</span><span class="keyb">&larr;</span><span class="keyb">&rarr;</span><span class="keyb">b</span><span class="keyb">a</span>) to enable it.
+</p>
+<textarea style="width: 650px; height: 150px;">
+<script>
+    var fileref=document.createElement('script');
+    fileref.setAttribute("type","text/javascript");
+    fileref.setAttribute("src", 
+        document.location.protocol.replace(/file|chrome|about|config/,'http') + 
+        '//include.rd.to/harlem_shaker/embed.js');
+    document.getElementsByTagName("head")[0].appendChild(fileref);
+</script>
+</textarea>
+
+<hr/>
+<p>This is based off <a href="http://blog.moovweb.com/2013/02/happy-valentines-day-internet-behold-the-harlem-shake-bookmarklet/">Moovweb's Valentines Day Bookmarklet.</a><br/>
+Source Code: <a href="https://github.com/AppliedEllipsis/harlem_shaker/">Github</a>
+
+</p>
+</body>
+</html>

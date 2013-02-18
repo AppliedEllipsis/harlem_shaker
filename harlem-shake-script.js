@@ -1,19 +1,32 @@
 (function() {
-
+/*
   var MIN_HEIGHT = 30;
   var MIN_WIDTH = 30;
   var MAX_HEIGHT = 350;
   var MAX_WIDTH = 350;
-
-  var PATH_TO_SONG = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
-
+*/
+  var MIN_HEIGHT = 20;
+  var MIN_WIDTH = 30;
+  var MAX_HEIGHT = 450;
+  var MAX_WIDTH = 950;
+  var PATH_TO = document.location.protocol.replace(/file|chrome|about|config/,'http') + "//include.rd.to/harlem_shaker/harlem-shake";
+  var a = document.createElement("audio");
+  if (!!a.canPlayType('audio/mpeg').replace(/no/,'')) {
+    var PATH_TO_SONG = PATH_TO + ".mp3";
+    //console.log('can play mp3');
+  } else if (!!a.canPlayType('audio/ogg').replace(/no/,'')) {
+    var PATH_TO_SONG = PATH_TO + ".ogg";
+    //console.log('can play ogg');
+  }
+  a = null;
+  
   var CSS_BASE_CLASS = "mw-harlem_shake_me"
   var CSS_FIRST_CLASS = "im_first";
   var CSS_OTHER_CLASSES = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
 
   var CSS_STROBE_CLASS = "mw-strobe_light";
 
-  var PATH_TO_CSS = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+  var PATH_TO_CSS = PATH_TO + "-style.css";
   var FILE_ADDED_CLASS = "mw_added_css"
 
   function addCSS() {
@@ -112,7 +125,7 @@
         for (var i=0; i<allShakeableNodes.length; i++) {
           shakeOther(allShakeableNodes[i]);
         }
-      }, 15500);
+      }, 14500);
     }, true);
     
     audioTag.addEventListener("ended", function() {
@@ -120,7 +133,7 @@
       removeAddedFiles();
     }, true);
 
-    audioTag.innerHTML = "<p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p>"
+    //audioTag.innerHTML = "<p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p>"
 
     document.body.appendChild(audioTag);
     audioTag.play();
@@ -139,10 +152,12 @@
     for (var i=0; i<shakingNodes.length; ) {
       shakingNodes[i].className =  shakingNodes[i].className.replace(regex, "");
     }
+    window.playing = false;
   }
 
   // get first item
   var allNodes = document.getElementsByTagName("*");
+  //console.log(allNodes.length);
   var firstNode = null;
   for (var i=0; i<allNodes.length; i++) {
     var thisNode = allNodes[i];
