@@ -1,4 +1,6 @@
 // Harlem Shaker Embedded Konami Code (https://github.com/AppliedEllipsis/harlem_shaker/)
+// The song is Harlem Shake by Baauer (https://soundcloud.com/baauer/harlem-shake/)
+// Buy on iTunes (https://itunes.apple.com/us/album/harlem-shake-single/id601136812/)
 function loadjscssfile(filename, filetype){
   var fileref;
   if (filetype=="js"){

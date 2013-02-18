@@ -12,6 +12,8 @@ Drag and drop the link found at [Include.RD.To](http://include.rd.to/harlem_shak
 Site Including
 -------------
     // Harlem Shaker Embedded Konami Code (https://github.com/AppliedEllipsis/harlem_shaker/)
+    // The song is [Harlem Shake by Baauer](https://soundcloud.com/baauer/harlem-shake/)
+    // [Buy on iTunes](https://itunes.apple.com/us/album/harlem-shake-single/id601136812/)
     <script>
     var fileref=document.createElement('script');
     fileref.setAttribute('type','text/javascript');
@@ -29,6 +31,7 @@ Notes
 - We could use //include.rd.to in the JavaScript source, but it will not support remotely hosted scripts and locally hosted file:// URL's.
 - The other protocols in the urls are not compatible due to security policies, but left in.
 - The bookmarklet is setup for remote site injection to allow future updates.
+- Explanation and History of the Harlem Shake from [Know Your Meme](http://knowyourmeme.com/memes/harlem-shake).
 
 Credits
 ------------
@@ -36,8 +39,11 @@ Credits
 - Moovweb's [GitHub](https://github.com/moovweb/harlem_shaker/)
 - This version is at [Include.RD.To](http://include.rd.to/harlem_shaker/)
 - Include.RD.To's [GitHub](https://github.com/AppliedEllipsis/harlem_shaker/)
+- The song is [Harlem Shake by Baauer](https://soundcloud.com/baauer/harlem-shake) - [Buy on iTunes](https://itunes.apple.com/us/album/harlem-shake-single/id601136812).
 
 License
 ------------
 - I do not know what the original code was released under.
+- The song is [Harlem Shake by Baauer](https://soundcloud.com/baauer/harlem-shake) and was released free online.  
+- The full version of the song can and should be purchased on [iTunes](https://itunes.apple.com/us/album/harlem-shake-single/id601136812)
 - I am assuming it is an undefined open license since it was on GitHub and with no guarantees or warranties and the creators and editors cannot be held responsible for anything.
